@@ -427,6 +427,9 @@ h3 span
  	padding-left: 5%;
  	width:90%;
   background-color:white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }	
 .prix
 {
