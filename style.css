@@ -321,7 +321,7 @@ header [class*="fas"]/*fleche de raccourci vers hommepage*/
 	color:black;
   text-decoration: none;
 }
-.sr-only,
+.sr-only
 {
   left:0;
   right:0;
@@ -759,10 +759,6 @@ h3 span
   	flex-direction: row;
   	justify-content: center;
   	bottom:0px;
-  }
-  .coeur img
-  {
-
   }
   .logo3
   {
