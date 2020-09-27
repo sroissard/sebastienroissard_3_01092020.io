@@ -440,8 +440,7 @@ h3 span
   z-index: 0;
   font-size:0.8em;
   bottom:7px;
-  transition-property: transform;
-  transition-duration: 400ms;
+  transition: all 400ms linear 0s;
   white-space: nowrap;
   overflow:hidden;
   text-overflow: ellipsis;
