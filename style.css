@@ -429,7 +429,7 @@ h3 span
 }
 .plat
 {
-  width:75%;
+  width:80%;
   height:50px;
   padding-left:5%;
   line-height: 1.5px;
@@ -445,20 +445,23 @@ h3 span
   overflow:hidden;
   text-overflow: ellipsis;
 }	
+[class*="btn3"]:hover .plat
+{
+  width:65%;
+}
 .s-btn
 {
   display:flex;
-  width:25%;
+  width:20%;
   height:50px;
   z-index:2;
 }
 .prix
 {
   z-index:3;
-  background-color:white;
   border-top-right-radius:15px;
   border-bottom-right-radius:15px;
-  width:100%;
+  
   height:50px;
   font-weight: bold;
   transition: all 400ms linear 0s;
@@ -467,15 +470,14 @@ h3 span
 .prix p
 {
   padding-top:12px;
-  padding-right:15%;
+  text-align:center;
 }
 [class*="btn3"]:hover .prix
  {
-  padding-right:5%;
+  width:80%;
   border-top-right-radius: 0%;
   border-bottom-right-radius: 0%; 
-  text-align:right;
-  transform: translateX(-50px);
+  transform: translateX(-10%);
  }
 .box 
 {
@@ -499,17 +501,21 @@ h3 span
 }
 .box img
 {
+
+  top:30%;
+  left:40%;
   width: 40%;
   height:40%;
   margin-left: auto;
   margin-right: auto;
-  margin-top:15px;
+  margin-top:17px;
   visibility:hidden;
   transition: all 400ms linear 0s;
   overflow:hidden;
 }
 [class*="btn3"]:hover .box img
  {
+ 
   animation: check 400ms linear forwards;
   visibility:visible;
  }
