@@ -429,7 +429,8 @@ h3 span
 }
 .plat
 {
-  width:80%;
+  display:inline-block;
+  width: 80%;
   height:50px;
   padding-left:5%;
   line-height: 1.5px;
