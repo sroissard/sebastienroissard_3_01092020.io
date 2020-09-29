@@ -20,3 +20,11 @@
   margin:30%;
   animation: spin 2s linear infinite, spinz 1s 3s forwards; 
  }
+ @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes spinz{
+	0%{ opacity: 1;}
+	100%{ opacity: 0;z-index:0;}
+}
