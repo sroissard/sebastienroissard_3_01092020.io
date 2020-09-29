@@ -375,21 +375,21 @@ h3 span
 }
 [class*="btn3"]
 {
-  width:80%;
+  width:320px;
   height:50px;
   background-color: white;
   font-size:0.8em;
   display:flex;
   border-radius:15px;
-  transition-property: transform;
-  transition-duration: 400ms;
+  transition-property: transform 400ms;
+  border-radius:15px;
   padding: 0%;
   box-shadow: 3px 3px 10px grey;
   border:none;
   position:relative;
   margin:auto;
- 	box-shadow: 3px 3px 10px grey;
- }
+  overflow:hidden;
+}
 [class*="btn3"]:hover
 {
   box-shadow: 3px 3px 30px #4b4b4b;
@@ -421,96 +421,78 @@ h3 span
 }
 .plat
 {
-  display:inline-block;
-  width: 80%;
+  min-width: 260px;
   height:50px;
   padding-left:5%;
   line-height: 1.5px;
   text-align: left;
   background-color:white;
-  border-top-left-radius:15px;
-  border-bottom-left-radius:15px;
-  z-index: 0;
   font-size:0.8em;
   bottom:7px;
-  transition: all 400ms linear 0s;
-  white-space: nowrap;
-  overflow:hidden;
-  text-overflow: ellipsis;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }	
-[class*="btn3"]:hover .plat
-{
-  width:65%;
-}
 .s-btn
 {
   display:flex;
-  width:20%;
+  width:110px;
   height:50px;
-  z-index:2;
+  transform: translateX(0);
+  transition: all 400ms linear 0s;
+}
+[class*="btn3"]:hover .s-btn
+{
+  transform:translateX(-50px);
+}
+.suspens
+{
+  height: 50px;
+  width: 15px;
+  padding-top: 5px;
+  opacity:0;
+  transition:opacity 400ms ease-in-out;
+}
+[class*="btn3"]:hover .suspens
+{
+  opacity:1;
 }
 .prix
 {
   z-index:3;
-  border-top-right-radius:15px;
-  border-bottom-right-radius:15px;
-  
+  width: 20px;
   height:50px;
   font-weight: bold;
-  transition: all 400ms linear 0s;
   font-size:0.8em;
+  margin-right:10px;
 }
 .prix p
 {
   padding-top:12px;
   text-align:center;
 }
-[class*="btn3"]:hover .prix
- {
-  width:80%;
-  border-top-right-radius: 0%;
-  border-bottom-right-radius: 0%; 
-  transform: translateX(-10%);
- }
 .box 
 {
   background-color:#99e2d0;
-  border-top-right-radius:15px;
-  border-bottom-right-radius:15px;
-  transition: all 400ms linear 0s;
-  width: 0;
+  width:50px;
   height: 50px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-[class*="btn3"]:hover .box 
- {
-   width: 15%;
- }
+}  
 .cdbox
 {
   width:100%
 }
 .box img
 {
-
-  top:30%;
-  left:40%;
-  width: 40%;
-  height:40%;
-  margin-left: auto;
-  margin-right: auto;
+  position:relative;
+  bottom:4px;
+  right:2px;
+  width: 20px;
+  height:20px;
   margin-top:17px;
-  visibility:hidden;
   transition: all 400ms linear 0s;
-  overflow:hidden;
 }
 [class*="btn3"]:hover .box img
  {
- 
   animation: check 400ms linear forwards;
-  visibility:visible;
  }
  @keyframes check {
   0% { transform: rotate(0deg); }
