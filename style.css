@@ -15,6 +15,36 @@
     font-weight: normal;
     font-style: normal;
 }
+.loader
+{
+	position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: #F4ECF7;
+    opacity: 80%;
+    z-index:9999;
+    animation: spinz 1s 3s forwards;
+}
+.loader::after {
+  display:block;
+  content:'';
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #9356DC;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  margin:30%;
+  animation: spin 2s linear infinite, spinz 1s 3s forwards; 
+ }
+ @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes spinz{
+	0%{ opacity: 1;}
+	100%{ opacity: 0;z-index:0;}
+}
 header
 {
 	justify-content:center;
