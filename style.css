@@ -23,8 +23,8 @@
     background-color: #F4ECF7;
     opacity: 80%;
     z-index:9999;
-    -webkit-animation: spinz 1s 3s forwards;
     -moz-animation: spinz 1s 3s forwards;
+    -webkit-animation: spinz 1s 3s forwards;
     animation: spinz 1s 3s forwards;
 }
 .loader::after {
@@ -37,11 +37,11 @@
   height: 100px;
   position:absolute;
   margin:30%;
-  -webkit-animation: spin 2s linear infinite, spinz 1s 3s forwards;
-  -moz-animation: spin 2s linear infinite, spinz 1s 3s forwards;   
-  animation: spin 2s linear infinite, spinz 1s 3s forwards; 
+  -moz-animation: spin 2s linear infinite, spinz 1s 3s 1; 
+  -webkit-animation: spin 2s linear infinite, spinz 1s 3s 1; 
+  animation: spin 2s linear infinite, spinz 1s 3s 1; 
  }
- @keyframes spin {
+ @-moz-keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
@@ -49,21 +49,21 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-@-moz-keyframes spin {
+@keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-@-webkit-keyframes spinz{
-	0%{ opacity: 1;}
-	100%{ opacity: 0;z-index:0;}
-}
 @-moz-keyframes spinz{
 	0%{ opacity: 1;}
-	100%{ opacity: 0;z-index:0;}
+	100%{ opacity:0; width:0%;}
+}
+@-webkit-keyframes spinz{
+	0%{ opacity: 1;}
+	100%{ opacity:0; width:0%;}
 }
 @keyframes spinz{
 	0%{ opacity: 1;}
-	100%{ opacity: 0;z-index:0;}
+	100%{ opacity:0; width:0%;}
 }
 header
 {
@@ -114,7 +114,7 @@ text-align: left;
 }
 .local p
 {
-  font-size: 0.9em;
+   font-size: 0.9em;
   color:#353535;
   display:block;
   text-align: center;
@@ -150,7 +150,7 @@ text-align: left;
 }
 .btn0, .btn4
 {
-	text-align: center;
+  text-align: center;
 	width:170px;
 	margin-left:auto;
 	margin-right:auto;
@@ -167,11 +167,11 @@ text-align: left;
 }
 .btn0 p, .btn4 p
 {
-	padding-top:0.8em;
+  padding-top:0.8em;
 }
 .btn0:hover, .btn4:hover
 {
-	opacity:0.8;
+  opacity:0.8;
 	box-shadow: 3px 3px 15px #4b4b4b;
 }
 .btn
@@ -535,7 +535,6 @@ h3 span
 .prix
 {
   background-color: white;
-  z-index:3;
   width: 20px;
   height:50px;
   font-weight: bold;
@@ -699,10 +698,6 @@ h3 span
     width: 60%;
     margin-left:auto;
     margin-right:auto;
-  }
-  footer
-  {
-    padding-top:105px;
   }
 }
 @media screen and (min-width:769px) and (max-width:1024px) 
