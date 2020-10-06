@@ -386,7 +386,7 @@ h3 span
 	position:relative;
 	border-top-left-radius:1.5rem;
 	border-top-right-radius:1.5rem;
-	bottom:30px;
+	border-bottom:30px;
 }
 #back
 {
@@ -699,6 +699,10 @@ h3 span
     margin-left:auto;
     margin-right:auto;
   }
+  footer
+  {
+    margin-top:160px;
+  }
 }
 @media screen and (min-width:769px) and (max-width:1024px) 
 {
@@ -775,7 +779,6 @@ h3 span
     width: 60%;
     display:flex;
     flex-wrap: wrap;
-    
     margin-left:auto;
     margin-right:auto;
   }
