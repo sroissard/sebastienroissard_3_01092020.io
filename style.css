@@ -601,7 +601,7 @@ h3 span
   article
   {
     width:100%;
-    height:1650px;    
+    height:auto;    
   }
   .btn0
   {
@@ -620,7 +620,7 @@ h3 span
   .restos
   {
     width: 100%;
-    height: 450px;
+    height: auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -651,7 +651,11 @@ h3 span
 	{
 		margin: 40%;
   	}
-	.btn0, .btn4
+    article
+    {
+      height:auto;    
+    }
+    .btn0, .btn4
   {
     margin-left: auto;
     margin-right: auto;
@@ -668,7 +672,7 @@ h3 span
   .restos
   {
     width: 100%;
-    height: 450px;
+    height: auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -698,10 +702,6 @@ h3 span
     width: 60%;
     margin-left:auto;
     margin-right:auto;
-  }
-  footer
-  {
-    margin-top:100px;
   }
 }
 @media screen and (min-width:769px) and (max-width:1024px) 
