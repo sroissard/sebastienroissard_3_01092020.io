@@ -248,6 +248,8 @@ li {
 }
 .cadre
 {
+  text-decoration: none;
+  color:black;
   display:block;
   height: 200px;
   margin-left:10%;
