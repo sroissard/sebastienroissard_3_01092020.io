@@ -10,8 +10,9 @@
 }
 @font-face {
     font-family: 'shrikhandregular';
-    src: url('fonts/shrikhand-regular-webfont.woff2') format('woff2'),
-         url('fonts/shrikhand-regular-webfont.woff') format('woff');
+    src: url('fonts/Shrikhand-Regular.ttf') format('truetype'),
+          url('fonts/shrikhand-regular-webfont.woff2') format('woff2'),
+          url('fonts/shrikhand-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
